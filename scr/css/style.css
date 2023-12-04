@@ -4,6 +4,7 @@ body {
 
 .header {
     background-color: #004aad;
+    margin-top: 5px;
 }
 
 nav {
@@ -31,6 +32,7 @@ nav {
 }
 
 .menu-content {
+    margin-top: 10px;
     display: none;
     position: absolute;
     background-color: #FFFFFF;
@@ -58,11 +60,9 @@ nav {
 
 /*COMEÇO INICIO*/
 .trapezio {
-width: 80%;
-margin-left: 10%;
+    width: 80%;
+    margin-left: 10%;
 }
-/*FIM INICIO*/
-
 /*COMEÇO PROJETO*/
 #projeto {
     display: flex;
@@ -86,18 +86,25 @@ margin-left: 10%;
     padding: 20px;
 }
 
-video {
+.cont-video {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 860px;
+    margin-top: 5%;
+}
+
+.video {
     position: absolute;
     right: 0;
     top: 10;
     width: 50%;
-    height: 60%;
+    height: 55%;
     margin-right: 5%;
 }
 
-.vd {
-    background-color: red;
-    margin-left: 1%;
+.vd-text {
+    text-align: center;
+    margin-left: 80px;
 }
 
 /*CAROUSEL*/
@@ -147,80 +154,44 @@ video {
     background-color: #333;
 }
 
-/* Sessão :: Equipe */
-#equipe {
-    width: 100%;
-    margin-top: 5%;
-}
-
-#divExternaEquipe {
-    display: flex;
-    justify-content: center;
-}
-
-#divInternaEquipe {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    align-items: center;
-}
-
-#cards-equipe-titulo {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2%;
-}
-
-.card-equipe-titulo {
+/*EQUIPE*/
+.container {
+    margin-top: 20%;
     display: flex;
     justify-content: space-around;
-    font-weight: bold;
-    color: #000000;
-    margin: 20px;
-    width: 400px;
-    height: 20px;
+    gap: 20px;
+    background-color: #2D8BBA;
+    padding: 40px;
+    border: solid 4px #FFFFFF;
 }
 
-.card-equipe-titulo-col1 {
-    width: 40%;
+.card-equipe:hover {
+    background-color: #000;
+    color: #ffff;
 }
 
-.card-equipe-titulo-col2 {
-    width: 60%;
+.card-equipe {
+    width: 300px;
+    height: 300px;
+    background-color: #004aad;
+    box-sizing: border-box;
 }
 
-#cards-equipe-descricao {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2%;
-}
-
-.card-equipe-descricao {
-    display: flex;
-    align-items: center;
+.card-equipe h2 {
     text-align: center;
-    background-color: #fff;
-    margin: 20px;
-    width: 400px;
-    height: 250px;
-    border-radius: 5px;
-    padding-left: 2%;
-    padding-right: 2%;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.card-equipe p {
     color: #000000;
 }
 
-.imagem-equipe {
-    width: 70%;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    position: relative;
-    z-index: 1;
-    left: 5%;
-}
-
-.texto_equipe {
-    color: #000000;
-    font-weight: bold;
+.texto-equipe {
+    margin-top: 30%;
+    margin-left: 5%;
+    width: 90%;
+    background-color: #FFFFFF;
 }
 
 /*COMEÇO RODAPÉ*/
